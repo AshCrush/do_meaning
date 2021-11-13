@@ -5,7 +5,7 @@ int main(void)
 	long long int m1, m2, m3;
 	int i,n;
 	L:
-	printf("请输入一个大于0的整数：");
+	printf("请输入要计算的项数：");
 	scanf_s("%d", &n);
 	m1 = m2 = 1;
 	if (n <= 0)
@@ -18,7 +18,7 @@ int main(void)
 		for (i = 3; i <= n; i++)
 		{
 			m3 = m1 + m2;
-			printf("%lld\,\0", m3);
+			printf("%lld，", m3);
 
 			m1 = m2;
 			m2 = m3;
